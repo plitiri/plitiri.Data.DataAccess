@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "plitiri.Data.DataAccess", "plitiri.Data.DataAccess\plitiri.Data.DataAccess.csproj", "{16989062-9C64-4FB1-A164-0116BA63933B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestConsoleApp", "TestConsoleApp\TestConsoleApp.csproj", "{A572E52C-CDF0-46AC-BFED-31A455BA3D26}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{16989062-9C64-4FB1-A164-0116BA63933B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16989062-9C64-4FB1-A164-0116BA63933B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16989062-9C64-4FB1-A164-0116BA63933B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16989062-9C64-4FB1-A164-0116BA63933B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A572E52C-CDF0-46AC-BFED-31A455BA3D26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A572E52C-CDF0-46AC-BFED-31A455BA3D26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A572E52C-CDF0-46AC-BFED-31A455BA3D26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A572E52C-CDF0-46AC-BFED-31A455BA3D26}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {95F9AEB4-8B87-445C-8171-04739D299E0C}
+	EndGlobalSection
+EndGlobal
