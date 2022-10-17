@@ -1,9 +1,14 @@
 ﻿using System.Text.Json;
 using plitiri.Data.DataAccess;
 
-
+/*
+ * Microsoft.Data.Sqlite.SqliteConnection, Microsoft.Data.Sqlite
+ * MySqlConnector.MySqlConnection, MySqlConnector
+ * Microsoft.Data.SqlClient.SqlConnection, Microsoft.Data.SqlClient
+ * Oracle.ManagedDataAccess.Client.OracleConnection, Oracle.ManagedDataAccess
+ * Npgsql.NpgsqlConnection, Npgsql
+ */
 var helper = new DataAccessHelper("Microsoft.Data.Sqlite", "Microsoft.Data.Sqlite.SqliteConnection", "Data Source=Application.db; Cache=Shared");
-
 var exists = await helper.ExecuteScalarAsync<long>("SELECT EXISTS (SELECT name FROM sqlite_master WHERE type='table' AND name='mytable');");
 if (exists == 0)
 {
