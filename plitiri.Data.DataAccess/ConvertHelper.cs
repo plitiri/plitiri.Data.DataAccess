@@ -29,7 +29,13 @@ public class ConvertHelper
                 var obj = Activator.CreateInstance(objectType);
                 foreach (var property in properties)
                 {
-                    var query = expandoObject.Where(x => x.Key.Equals(property.Name, StringComparison.OrdinalIgnoreCase));
+                    var name = property.Name;
+                    if (property.GetCustomAttributes(typeof(MappingColumnAttribute), true)?.FirstOrDefault() is MappingColumnAttribute mappingColumnAttr)
+                    {
+                        name = mappingColumnAttr.Name;
+                    }
+
+                    var query = expandoObject.Where(x => x.Key.Equals(name, StringComparison.OrdinalIgnoreCase));
                     if (query.Any())
                     {
                         var value = query.Select(x => x.Value).FirstOrDefault();
